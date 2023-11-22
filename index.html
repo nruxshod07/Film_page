@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+  </head>
+  <body>
+    <div class="BG">
+      <div class="container">
+        <div class="header">
+          <h1>Сейчас в кино</h1>
+          <div class="hr"></div>
+          <div class="genres">
+            <p>Все</p>
+            <p>Боевики</p>
+            <p>Приключения</p>
+            <p>Комедия</p>
+            <p>Фантастика</p>
+            <p>Триллеры</p>
+            <p>Драма</p>
+          </div>
+        </div>
+        <div class="films"></div>
+        <div class="new">Все новинки</div>
+        <div class="trailers">
+          <div class="trailers_top">
+            <h1>НОВЫЕ ТРЕЙЛЕРЫ</h1>
+            <button>Все трейлеры<img src="public/Arrow 1.png" alt="" /></button>
+          </div>
+
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/uyPLu4E45So"
+            class="main_trailer"
+          ></iframe>
+          <div class="trailer_info">
+            <div class="left">
+              <h1>Форсаж 9</h1>
+              <img src="public/Поделиться.png" alt="" class="share" />
+            </div>
+            <div class="right">
+              <img src="public/Оценка.png" alt="" class="rate" />
+            </div>
+          </div>
+
+          <div class="necessary_trailers">
+            <div>
+              <iframe
+                width="90%"
+                height="150"
+                src="https://www.youtube.com/embed/TJjrfSzk4l0"
+              ></iframe>
+              <h1>Наполеон</h1>
+            </div>
+            <div>
+              <iframe
+                width="90%"
+                height="150"
+                src="https://www.youtube.com/embed/5Rjm8TVa1T0"
+              ></iframe>
+              <h1>Тихое место 2</h1>
+            </div>
+            <div>
+              <iframe
+                width="90%"
+                height="150"
+                src="https://www.youtube.com/embed/5w_B6xHGFms"
+              ></iframe>
+              <h1>Мулан</h1>
+            </div>
+            <div>
+              <iframe
+                width="90%"
+                height="150"
+                src="https://www.youtube.com/embed/uyPLu4E45So"
+                frameborder="0"
+              ></iframe>
+              <h1>Форсаж 9</h1>
+            </div>
+          </div>
+          <div class="titles"></div>
+        </div>
+        <div class="header">
+          <h1>Популярные фильмы</h1>
+          <div class="hr"></div>
+          <div class="genres">
+            <p>Все время</p>
+            <p>2020</p>
+            <p>2019</p>
+            <p>2018</p>
+            <p>2017</p>
+            <p>2016</p>
+            <p>2015</p>
+          </div>
+        </div>
+        <div class="films popular_films"></div>
+        <div class="header">
+          <h1>Популярные персоны</h1>
+          <div class="genres">
+            <p>За год</p>
+            <p>За месяц</p>
+            <p>За неделю</p>
+          </div>
+        </div>
+        <div class="persons">
+          <div class="actor tarantino">
+            <p class="rate"></p>
+            <div class="actor_info"></div>
+          </div>
+          <div class="actor jason">
+            <p class="rate"></p>
+            <div class="actor_info"></div>
+          </div>
+          <div class="actors">
+            <div class="person">
+              <div>
+                <p class="name ru">Тинто Брасс</p>
+                <p class="en">Tinto Brass</p>
+                <p class="age">87 лет</p>
+              </div>
+              <div>
+                <p class="place">3-е место</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="person">
+              <div>
+                <p class="name ru">Джеки Чан</p>
+                <p class="en">Jackie Chan</p>
+                <p class="age">66 лет</p>
+              </div>
+              <div>
+                <p class="place">4-е место</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="person">
+              <div>
+                <p class="name ru">Том Харди</p>
+                <p class="en">Tom Hardy</p>
+                <p class="age">42 года</p>
+              </div>
+              <div>
+                <p class="place">5-е место</p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="person">
+              <div>
+                <p class="name ru">Акшай Кумар</p>
+                <p class="en">Akshay Kumar</p>
+                <p class="age">52 года</p>
+              </div>
+              <div>
+                <p class="place">6-е место</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

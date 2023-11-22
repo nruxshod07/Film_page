@@ -1,0 +1,38 @@
+header {
+    /* background-image:url(public/main_poster.png) ; */
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-weight: bolder;
+}
+.middle {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+}
+.right {
+    display: flex;
+    gap: 10px;
+}
+.search {
+    background-color: white;
+    border-radius: 7px;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.sign_in {
+    padding: 5px 30px;
+    background-color: #3657CB;
+    border: none;
+    box-shadow: 0px 0px 15px #3657CB;
+    color: white;
+    border-radius: 10px;
+}
