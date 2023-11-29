@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/filmPage/style.css">
-    <link rel="stylesheet" href="/styles/header.css">
-</head>
-<body>
-    <div class="container">
-adwad
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="/styles/header.css" />
+  </head>
+
+  <body>
+    <div class="movie_bg">
+      <div class="content">
+        <header>
+          <div class="container"></div>
+        </header>
+
+        <div class="container">
+          <div class="movie_main_info">
+            <div class="poster"></div>
+            <div class="info">
+              <div class="name_tag">
+                <div class="path">
+                  Главная > Фильмы > <span class="mini_name"></span>
+                </div>
+                <h1 class="movie_name"></h1>
+                <p class="tagline"></p>
+              </div>
+              <div class="ratings">
+                <div class="rating_box">
+                  <div class="rating">
+                    <p class="rate"></p>
+                  </div>
+                  <p class="rate_place">Kinoarea</p>
+                </div>
+              </div>
+              <p class="description"></p>
+              <div class="watch_trailer_links">
+                <button class="watch">
+                  <img src="/public/small_play.svg" alt="play" />
+                  Смотреть трейлер
+                </button>
+                <img class="social_links" src="/public/links.png" alt="links" />
+              </div>
+            </div>
+          </div>
+
+          <div class="like_dislike">
+            <button class="like">
+              <img src="/public/like.svg" alt="like" />
+            </button>
+            <button class="dislike">
+              <img src="/public/dislike.svg" alt="dislike" />
+            </button>
+            <div class="waiting_rating">
+              <div class="wait_rate">
+                <p>Рейтинг ожиданий <span class="waiting">67</span>%</p>
+              </div>
+            </div>
+            <button class="love">
+              <img src="/public/love.svg" alt="love" />
+            </button>
+            <p class="loved_people">
+              В избранном у <span class="vout_count">___</span> человек
+            </p>
+          </div>
+          <div class="information">
+            <div class="big_span">
+              <span class="info_box">
+                <p class="info_name">Год:</p>
+                <p class="answer year"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Страна:</p>
+                <p class="answer" id="countries"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Слоган:</p>
+                <p class="answer slogan"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Компании:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Сценарий:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Продюсер:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Оператор:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Композитор:</p>
+                <p class="answer"></p>
+              </span>
+            </div>
+            <div class="big_span">
+              <span class="info_box">
+                <p class="info_name">Художник:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Монтаж:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Жанр:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Сборы в мире:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Премьера (мир):</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Премьера (РФ):</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Возраст:</p>
+                <p class="answer"></p>
+              </span>
+              <span class="info_box">
+                <p class="info_name">Время:</p>
+                <p class="answer"></p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="module" src="/filmPage/script.js"></script>
-</body>
+
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

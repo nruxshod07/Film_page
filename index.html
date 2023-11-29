@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <link rel="stylesheet" href="font/stylesheet.css" />
   </head>
   <body>
@@ -48,41 +48,7 @@
             </div>
           </div>
 
-          <div class="necessary_trailers">
-            <div>
-              <iframe
-                width="90%"
-                height="150"
-                src="https://www.youtube.com/embed/TJjrfSzk4l0"
-              ></iframe>
-              <h1>Наполеон</h1>
-            </div>
-            <div>
-              <iframe
-                width="90%"
-                height="150"
-                src="https://www.youtube.com/embed/5Rjm8TVa1T0"
-              ></iframe>
-              <h1>Тихое место 2</h1>
-            </div>
-            <div>
-              <iframe
-                width="90%"
-                height="150"
-                src="https://www.youtube.com/embed/5w_B6xHGFms"
-              ></iframe>
-              <h1>Мулан</h1>
-            </div>
-            <div>
-              <iframe
-                width="90%"
-                height="150"
-                src="https://www.youtube.com/embed/uyPLu4E45So"
-                frameborder="0"
-              ></iframe>
-              <h1>Форсаж 9</h1>
-            </div>
-          </div>
+          <div class="necessary_trailers"></div>
           <div class="titles"></div>
         </div>
         <div class="header">
@@ -165,8 +131,110 @@
             </div>
           </div>
         </div>
+        <div class="header">
+          <h1>Ожидаемые новинки</h1>
+        </div>
+        <div class="films upcoming"></div>
+        <div class="header">
+          <div style="display: flex; align-items: center; gap: 30px">
+            <h1>Кассовые сборы</h1>
+            <p>13 марта - 15 марта</p>
+          </div>
+          <div class="hr"></div>
+          <div class="genres">
+            <p>Россия</p>
+            <p>Весь мир</p>
+            <p>США и Канада</p>
+          </div>
+        </div>
+
+        <div class="kass">
+          <div class="kass_it">
+            <div><img src="public/Rectangle 13first.png" alt="" /></div>
+            <div>
+              <p class="it_title">1. Бладшот</p>
+              <p class="price">$13млн</p>
+              <p class="profit">$15.1 млн за 4 недели</p>
+            </div>
+          </div>
+          <div class="kass_it">
+            <div><img src="public/Rectangle 13second.png" alt="" /></div>
+            <div>
+              <p class="it_title">2. Вперед</p>
+              <p class="price">$6.8млн</p>
+              <p class="profit">$41.4 млн за 4 недели</p>
+            </div>
+          </div>
+          <div class="kass_it">
+            <div><img src="public/Rectangle 13third.png" alt="" /></div>
+            <div>
+              <p class="it_title">3. Человек-Невидимка</p>
+              <p class="price">$6.2млн</p>
+              <p class="profit">$58.3 млн за 3 недели</p>
+            </div>
+          </div>
+          <div class="kass_it">
+            <div><img src="public/Rectangle 13fourth.png" alt="" /></div>
+            <div>
+              <p class="it_title">4. Соник в кино</p>
+              <p class="price">$2.8млн</p>
+              <p class="profit">$15.1 млн за 4 недели</p>
+            </div>
+          </div>
+          <div class="kass_it">
+            <div><img src="public/Rectangle 13five.png" alt="" /></div>
+            <div>
+              <p class="it_title" style="white-space: nowrap">5. Джентльмены</p>
+              <p class="price">$1.8млн</p>
+              <p class="profit">$78.7 млн за 11 недель</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="content">
+            <img src="public/Логотип.png" alt="" />
+            <h1 class="ft_title">Подпишитесь на E-mail рассылку</h1>
+            <p style="color: white; max-width: 600px; font-size: 18px">
+              Если хотите быть в курсе последних новостей и новинок кино -
+              заполните форму ниже и оформите бесплатную E-mail рассылку!
+            </p>
+            <div class="fff">
+              <div class="inp">
+                <input type="text" placeholder="Введите свой E-mail адрес" />
+              </div>
+              <button class="btn">Подписаться</button>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" /> Соглашаюсь на условия
+              <span class="yel">Политики Конфиденциальности</span>
+            </div>
+          </div>
+        </footer>
+        <div class="bottom">
+          <div>
+            <img src="public/    .png" />
+          </div>
+          <div class="bottom_menu">
+            <p>Афиша</p>
+            <p>Новости</p>
+            <p>Персоны</p>
+            <p>Рейтинги</p>
+            <p>Рецензии</p>
+            <p>Каталог фильмов</p>
+          </div>
+          <p style="color: gray; margin-top: 30px;">2020 © Kinoarea.  Все права защищены</p>
+          <p style="color: gray; margin-top: 30px;text-decoration: underline;">Политика конфиденциальности</p>
+        </div>
       </div>
     </div>
+    <!-- <div class="modalBG"></div>
+    <div class="modal">
+      <form>
+        <input type="text" name="name" placeholder="Введите название фильма" />
+        <button><img src="public/Vector.png" /></button>
+        
+      </form>
+    </div> -->
     <script type="module" src="main.js"></script>
   </body>
 </html>

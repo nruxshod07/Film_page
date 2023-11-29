@@ -41,18 +41,19 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   column-gap: 30px;
   color: white;
   /* row-gap: 30px; */
 }
 .item {
   margin-bottom: 30px;
+  position: relative;
 }
 .films img {
-  max-width: 250px;
+  border-radius: 10px;
+  max-width: 100%;
   width: 100%;
-  height: 350px;
+  height: 90%;
   margin-bottom: 30px;
 }
 .new {
@@ -64,6 +65,7 @@
   color: white;
   text-align: center;
   margin-top: 30px;
+  cursor: pointer;
 }
 .trailers {
   margin-top: 80px;
@@ -161,7 +163,7 @@
 }
 .line {
   width: 380px;
-  background-color: #1E2538;
+  background-color: #1e2538;
   height: 2px;
   border-radius: 1px;
   margin: 0 auto;
@@ -177,18 +179,178 @@
 .person .name {
   font-weight: bold;
   color: white;
-  padding:3px;
+  padding: 3px;
 }
 .person .en {
-  color: #3B486B;
-  padding:3px;
+  color: #3b486b;
+  padding: 3px;
 }
 .person .age {
-  color: #F2F60F;
-  padding:3px;
+  color: #f2f60f;
+  padding: 3px;
 }
 .person .place {
-  color: #F2F60F;
+  color: #f2f60f;
   font-weight: bold;
-  padding:3px;
+  padding: 3px;
 }
+.itemBG {
+  background-color: blue;
+  opacity: 0.5;
+  z-index: 10;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  bottom: 10%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.card {
+  display: none;
+  padding: 15px 25px;
+  background-color: white;
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  translate: -50% -50%;
+  color: skyblue;
+  z-index: 10;
+  border: NONE;
+  border-radius: 10px;
+}
+.kass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.kass_it {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.it_title {
+  color: white;
+  font-weight: bold;
+}
+.price {
+  color: #f2f60f;
+  font-size: 80%;
+  margin: 6px 0;
+}
+.profit {
+  color: gray;
+  font-size: 80%;
+  margin: 6px 0;
+}
+footer {
+  margin-top: 100px;
+  background-image: url(public/Фон.png);
+  width: 100%;
+  height: 547px;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.ft_title {
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+}
+.inp {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inp input {
+  border: none;
+  width: 100%;
+  font-size: 17px;
+  outline: none;
+}
+.fff {
+  display: flex;
+  margin-top: 40px;
+}
+.btn {
+  margin-left: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: none;
+}
+.checkbox {
+  margin-top: 40px;
+  color: white;
+  font-size: 110%;
+}
+.yel {
+  color: yellow;
+  text-decoration: underline;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+.bottom_menu {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+/* .modalBG {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: block;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.modal {
+  display: none;
+  opacity: 1;
+  width: 50%;
+  background-color: black;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.result {
+  display: flex;
+  font-size: 10px;
+  color: white;
+  flex-direction: column;
+} */

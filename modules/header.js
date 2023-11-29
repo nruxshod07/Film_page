@@ -42,4 +42,8 @@ export function create_header(place) {
     left.prepend(left_top,left__bottom)
     middle.prepend(afisha,media,films,actors,news,packs,category)
     right.prepend(search,sign_in)
+
+    search.onclick = () => {
+        
+    }
 }
