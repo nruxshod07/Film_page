@@ -33,9 +33,41 @@ export function reload_main(place, arr, num) {
     // console.log(arr.results);
   }
 }
-import { getPersons } from "/modules/http";
+import { getPersons,getFilmByDate } from "/modules/http";
 export function persons(place) {
   getPersons()
     .then((res) => res.json())
     .then((res) => {});
+}
+import { getFilmByGenre } from "/modules/http";
+export function createGenres(place, arr, place2) {
+  let id;
+  arr.forEach((genre) => {
+    let genr = document.createElement("p");
+    genr.innerHTML = genre.name;
+    genr.setAttribute("id", genre.id);
+    place.append(genr);
+    genr.onclick = () => {
+      place2.innerHTML = "";
+      id = genr.getAttribute("id");
+      getFilmByGenre(id)
+        .then((res) => res.json())
+        .then((res) => reload_main(place2, res, 8));
+    };
+  });
+}
+export function createFilmByDate(years, place) {
+  let date;
+  years.forEach((year) => {
+    year.onclick = () => {
+      place.innerHTML = ""
+      date = year.innerHTML;
+      console.log(date);
+      getFilmByDate(date)
+        .then((res) => res.json())
+        .then((res) => {
+          reload_main(place, res, 4);
+        });
+    };
+  });
 }

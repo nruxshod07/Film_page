@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Gilroy";
 }
+
 .container {
   background-image: url(public/main_poster.png);
   width: 100%;
@@ -13,12 +14,14 @@
   padding: 10px 150px;
   background-repeat: no-repeat;
 }
+
 .BG {
   background-color: #1e2538;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -26,17 +29,29 @@
   color: white;
   margin-top: 100px;
 }
+
+.genress {
+  overflow-x: scroll;
+}
+
 .genres {
+  max-width: 400px;
   display: flex;
   align-items: center;
   gap: 30px;
+  white-space: nowrap;
 }
+.genress::-webkit-scrollbar-track {
+  background-color: red;
+}
+
 .hr {
   width: 50px;
   height: 3px;
   background-color: gray;
   border-radius: 10px;
 }
+
 .films {
   margin-top: 50px;
   display: grid;
@@ -45,10 +60,28 @@
   color: white;
   /* row-gap: 30px; */
 }
+
+.popular_films {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  column-gap: 30px;
+  color: white;
+}
+.popular_films img {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: 90%;
+  margin-bottom: 30px;
+}
+
 .item {
   margin-bottom: 30px;
   position: relative;
 }
+
 .films img {
   border-radius: 10px;
   max-width: 100%;
@@ -56,6 +89,7 @@
   height: 90%;
   margin-bottom: 30px;
 }
+
 .new {
   margin: 0 auto;
   max-width: 160px;
@@ -67,48 +101,58 @@
   margin-top: 30px;
   cursor: pointer;
 }
+
 .trailers {
   margin-top: 80px;
 }
+
 .trailers_top {
   text-align: center;
   display: flex;
   justify-content: space-between;
   color: white;
 }
+
 .trailers_top button {
   background-color: transparent;
   color: white;
   border: none;
   text-align: center;
 }
+
 .trailers_top button img {
   width: 20px;
   margin-left: 5px;
 }
+
 .main_trailer {
   margin-top: 40px;
   border: none;
   border-radius: 10px;
 }
+
 .trailer_info div {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .necessary_trailers iframe {
   margin: 40px 0 4px 7px;
   border: none;
   border-radius: 10px;
 }
+
 .necessary_trailers {
   display: flex;
   font-size: 10px;
   color: white;
 }
+
 .titles {
   color: white;
   display: flex;
 }
+
 .films {
   margin-top: 50px;
   display: grid;
@@ -117,6 +161,7 @@
   column-gap: 30px;
   color: white;
 }
+
 .trailer_info {
   margin-top: 60px;
   display: flex;
@@ -124,12 +169,15 @@
   align-items: center;
   height: 40px;
 }
+
 .rate {
   height: 70px;
 }
+
 .share {
   height: 20px;
 }
+
 .left {
   display: flex;
   flex-direction: row;
@@ -138,22 +186,27 @@
   color: white;
   align-items: center;
 }
+
 .tarantino {
   background-image: url(public/КвентинТарантино.png);
 }
+
 .jason {
   background-image: url(public/ДжейсонСтейтем.png);
 }
+
 .actor {
   background-repeat: no-repeat;
   width: 400px;
   height: 444px;
 }
+
 .persons {
   display: flex;
   gap: 30px;
   margin-top: 40px;
 }
+
 .person {
   display: flex;
   flex-direction: row;
@@ -161,6 +214,7 @@
   width: 400px;
   align-items: center;
 }
+
 .line {
   width: 380px;
   background-color: #1e2538;
@@ -168,6 +222,7 @@
   border-radius: 1px;
   margin: 0 auto;
 }
+
 .actors {
   padding: 20px;
   height: 444px;
@@ -176,24 +231,29 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .person .name {
   font-weight: bold;
   color: white;
   padding: 3px;
 }
+
 .person .en {
   color: #3b486b;
   padding: 3px;
 }
+
 .person .age {
   color: #f2f60f;
   padding: 3px;
 }
+
 .person .place {
   color: #f2f60f;
   font-weight: bold;
   padding: 3px;
 }
+
 .itemBG {
   background-color: blue;
   opacity: 0.5;
@@ -207,6 +267,7 @@
   align-items: center;
   border-radius: 10px;
 }
+
 .card {
   display: none;
   padding: 15px 25px;
@@ -221,6 +282,7 @@
   border: NONE;
   border-radius: 10px;
 }
+
 .kass {
   display: flex;
   justify-content: space-between;
@@ -228,25 +290,30 @@
   gap: 40px;
   margin-top: 100px;
 }
+
 .kass_it {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .it_title {
   color: white;
   font-weight: bold;
 }
+
 .price {
   color: #f2f60f;
   font-size: 80%;
   margin: 6px 0;
 }
+
 .profit {
   color: gray;
   font-size: 80%;
   margin: 6px 0;
 }
+
 footer {
   margin-top: 100px;
   background-image: url(public/Фон.png);
@@ -254,6 +321,7 @@ footer {
   height: 547px;
   border-radius: 10px;
 }
+
 .content {
   display: flex;
   justify-content: center;
@@ -263,11 +331,13 @@ footer {
   height: 100%;
   flex-direction: column;
 }
+
 .ft_title {
   font-weight: bold;
   font-size: 45px;
   color: white;
 }
+
 .inp {
   width: 400px;
   background-color: white;
@@ -277,16 +347,19 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .inp input {
   border: none;
   width: 100%;
   font-size: 17px;
   outline: none;
 }
+
 .fff {
   display: flex;
   margin-top: 40px;
 }
+
 .btn {
   margin-left: 20px;
   background-color: yellow;
@@ -296,15 +369,18 @@ footer {
   font-weight: bold;
   border: none;
 }
+
 .checkbox {
   margin-top: 40px;
   color: white;
   font-size: 110%;
 }
+
 .yel {
   color: yellow;
   text-decoration: underline;
 }
+
 .bottom {
   display: flex;
   align-items: center;
@@ -313,12 +389,18 @@ footer {
   color: white;
   margin-top: 100px;
 }
+
 .bottom_menu {
   display: flex;
   gap: 30px;
   margin-top: 30px;
   font-weight: bold;
 }
+
+// .swiper {
+//   overflow-x: scroll;
+// }
+
 /* .modalBG {
   display: none;
   width: 100%;

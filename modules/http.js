@@ -79,3 +79,27 @@ export const Genres = async (url) => {
   });
   return res;
 };
+export const getFilmByGenre = async (id) => {
+  const res = await fetch(
+    (base_url = base_url + `/discover/movie?with_genres=${id}`),
+    {
+      headers: {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYTY4N2I0YTdlYzE4NmZhM2ZjNzcxZGVjNTkxZTc0MyIsInN1YiI6IjY1NTc0NjVkNTM4NjZlMDEzOWUyZjkwZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mWM59T4oWuK5yh6Ub7dnmOr33v6iRL9qrNj-k7rhq1E",
+      },
+    }
+  );
+  return res;
+};
+export const getFilmByDate = async (date) => {
+  const res = await fetch(
+    base_url + `/discover/movie?primary_release_year=${date}`,
+    {
+      headers: {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYTY4N2I0YTdlYzE4NmZhM2ZjNzcxZGVjNTkxZTc0MyIsInN1YiI6IjY1NTc0NjVkNTM4NjZlMDEzOWUyZjkwZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mWM59T4oWuK5yh6Ub7dnmOr33v6iRL9qrNj-k7rhq1E",
+      },
+    }
+  );
+  return res
+};

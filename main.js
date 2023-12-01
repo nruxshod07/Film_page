@@ -1,3 +1,14 @@
+import {
+  getFilms,
+  getPersons,
+  getTrailers,
+  Genres,
+  getFilmByGenre,
+  getFilmByDate,
+} from "./modules/http";
+import { create_header } from "./modules/header";
+import { reload_main, persons, createGenres,createFilmByDate } from "./modules/functions";
+
 let cont = document.querySelector(".container");
 let now_playing_films = document.querySelector(".films");
 let iframe = document.querySelector("iframe");
@@ -6,10 +17,11 @@ let popular_films = document.querySelector(".popular_films");
 let modal = document.querySelector(".modal");
 let upcoming = document.querySelector(".upcoming");
 let nec_trailers = document.querySelector(".necessary_trailers");
+let genres = document.querySelector(".genres");
+let years = document.querySelectorAll(".years p");
+let date = null;
 
-import { getFilms, getPersons, getTrailers, Genres } from "./modules/http";
-import { create_header } from "./modules/header";
-import { reload_main, persons } from "./modules/functions";
+
 create_header(cont);
 
 getFilms("now_playing")
@@ -33,39 +45,44 @@ getFilms("now_playing")
 getFilms("popular")
   .then((res) => res.json())
   .then((res) => {
-    for (let i = 0; i <= 3; i++) {
-      getTrailers(res.results[i].id)
-        .then((ress) => ress.json())
-        .then((ress) => {
-          let trailer = document.createElement("div");
-          let tr = document.createElement("iframe");
+    // for (let i = 0; i <= 3; i++) {
+    //   getTrailers(res.results[i].id)
+    //     .then((ress) => ress.json())
+    //     .then((ress) => {
+    //       let trailer = document.createElement("div");
+    //       let tr = document.createElement("iframe");
 
-          tr.src = "https://www.youtube.com/embed/" + ress.results[0].key;
+    //       tr.src = "https://www.youtube.com/embed/" + ress.results[0].key;
 
-          trailer.append(tr);
-          nec_trailers.append(trailer);
-
-          console.log(ress);
-        });
-    }
+    //       trailer.append(tr);
+    //       nec_trailers.append(trailer);
+    //     });
+    // }
 
     console.log(res);
     reload_main(popular_films, res);
   });
 getFilms("popular")
   .then((res) => res.json())
-  .then((res) => reload_main(popular_films, res,4));
-  getFilms("upcoming")
-  .then(res => res.json())
-  .then(res => reload_main(upcoming,res,4))
+  .then((res) => reload_main(popular_films, res, 4));
+getFilms("upcoming")
+  .then((res) => res.json())
+  .then((res) => reload_main(upcoming, res, 4));
 getPersons()
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
+    // console.log(res);
   });
 Genres()
-.then(res => res.json())
-.then(res => console.log(res))
+  .then((res) => res.json())
+  .then((res) => {
+    createGenres(genres, res.genres, now_playing_films);
+    console.log(res);
+  });
+createFilmByDate(years,popular_films)
+// getFilmByGenre()
+// .then(res => res.json())
+// .then(res => console.log(res))
 // let form = document.forms[0];
 
 // form.onsubmit = (e) => {
